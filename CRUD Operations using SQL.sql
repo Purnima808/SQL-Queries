@@ -109,3 +109,18 @@ values
 delete
 from loans
 where Loan_ID = 4;
+
+/*Let's add a column in the customers table.*/
+alter table customers
+add email char(100);
+
+select *
+from customers;
+
+/*Let's put some value in the email column of customers table.
+INSERT: with this we put the whole row.alter
+UPDATE: with this we can update a particular column in the existing row. */
+
+update customers
+set email = "suhas.c@gmail.com"
+where custID = 201;
